@@ -1,6 +1,6 @@
-# Primerjava-znanih-videoiger
+# Primerjava znanih videoiger
 
-V tej nalogi bom primerjal **oceno**, **težavnost** in **dolžino** nekaterih videoiger na strani gamefaqs[https://gamefaqs.gamespot.com/games/rankings]. Analiziral bom le igre, ki imajo vsaj določeno število glasov od uporabnikov na tej spletni strani (verjetno bo spodnja meja 100 glasov, kar v tem trenutku znaša 8442 iger).
+V tej nalogi bom primerjal **oceno**, **težavnost** in **dolžino** nekaterih videoiger na strani [gamefaqs](https://gamefaqs.gamespot.com/games/rankings). Analiziral bom le igre, ki imajo vsaj določeno število glasov od uporabnikov na tej spletni strani (verjetno bo spodnja meja 100 glasov, kar v tem trenutku znaša 8442 iger).
 
 Poleg imena igre in njenih zgoraj naštetih lastnosti nameravam za natančnejšo analizo zajeti še:
 * datum izida igre
