@@ -21,4 +21,4 @@ def prenesi_in_shrani_n_strani(n=170):
     for zamično_število in range(n):  
         prenesi_in_shrani(naš_url + query_dodatek + str(zamično_število), 
                             destinacija, 
-                            f'a{zamično_število}.html')
+                            f'stran{zamično_število}.html')

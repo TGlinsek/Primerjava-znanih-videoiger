@@ -18,12 +18,20 @@ def pridobi_starševski_imenik_glede_na_podano_pot(pot=vrni_trenutno_pot()):
     return os.path.abspath(os.path.join(pot, os.pardir))
 
 
+def pripravi_imenik(ime_datoteke):
+    '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
+    imenik = os.path.dirname(ime_datoteke)
+    if imenik:
+        os.makedirs(imenik, exist_ok=True)
+
+
 def shrani_niz(niz, imenik, ime_datoteke):
     """Ustvari se nova datoteka na naslovu "imenik"/"ime_datoteke". Nato
     se tja zapiše vsebina parametra "text". Če je vrednost v parametru
     "directory" prazen niz, se datoteka naredi v trenutni mapi.
     """
-    os.makedirs(imenik, exist_ok=True)
+    # os.makedirs(imenik, exist_ok=True)
+    pripravi_imenik(ime_datoteke)
     pot = os.path.join(imenik, ime_datoteke)  # pot je sedaj polno ime datoteke
     with open(pot, 'w', encoding='utf-8') as output:  # utf-8 je obvezen, če črpamo iz kakih ruskih al pa kitajskih strani
         output.write(niz)
