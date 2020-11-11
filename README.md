@@ -18,3 +18,7 @@ Preizkusiti želim naslednje hipoteze:
 * Ali imajo arkadne igre v povprečju višjo težavnost?
 * Ali se večina franšiz s časom slabša po ocenah uporabnikov te spletne strani?
 * Ali so računalniške igre v povprečju bolje ocenjene od tistih na konzolah ali telefonih?
+
+## Podatki za obdelovanje
+
+V csv datotekah so shranjene igre in pa konzole. Pri igrah so poleg imena shranjeni še njihov id, njihova konzola, ocena, težavnost in pa dolžina. Pri konzolah je poleg imena shranjen le še njihov id.
