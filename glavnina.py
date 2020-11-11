@@ -9,4 +9,3 @@ def prenesi_n_strani_in_jih_shrani():
 
 def prenesi_n_strani_in_izpiši_csv():
     pass
-

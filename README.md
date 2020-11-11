@@ -21,4 +21,4 @@ Preizkusiti želim naslednje hipoteze:
 
 ## Podatki za obdelovanje
 
-V csv datotekah so shranjene igre in pa konzole. Pri igrah so poleg imena shranjeni še njihov id, njihova konzola, ocena, težavnost in pa dolžina. Pri konzolah je poleg imena shranjen le še njihov id.
+V csv datotekah so shranjeni podatki o igrah in konzolah. V datotekah za igre so poleg njihovega imena shranjeni še njihov id, njihova konzola, ocena, težavnost in pa dolžina. Pri konzolah je poleg imena shranjen le še njihov id. Možno je tudi, da bom za bolj podrobno analizo moral dodati še nekatere ostale kriterije, npr. žanr.
