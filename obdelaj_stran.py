@@ -96,16 +96,27 @@ def vrni_slovar_podatkov_iger_iz_niza(niz):
     return seznam_zadetkov
 
 
-def vrni_slovar_podatkov_strani(indeks_strani):
+def vrni_slovar_podatkov_o_igrah(indeks_strani=0):
     ime_datoteke = f"stran{indeks_strani}.html"
     vsebina = delo_z_datotekami.preberi_niz("PROG 1\\Projektna_naloga-shranjene_strani", 
                                             ime_datoteke)
-    return vrni_slovar_podatkov_iger_iz_niza(vsebina), vrni_slovar_podatkov_konzol_iz_niza(vsebina)
+    return vrni_slovar_podatkov_iger_iz_niza(vsebina)
 
 
-# igre, konzole = vrni_slovar_podatkov_strani(0)
+def vrni_slovar_podatkov_o_konzolah():
+    indeks_strani = 0  # vseeno, katero stran vzamemo, saj imajo vse enak seznam konzol
+    ime_datoteke = f"stran{indeks_strani}.html"
+    vsebina = delo_z_datotekami.preberi_niz("PROG 1\\Projektna_naloga-shranjene_strani", 
+                                            ime_datoteke)
+    return vrni_slovar_podatkov_konzol_iz_niza(vsebina)
+                        
+
+# igre = vrni_slovar_podatkov_o_igrah(0)
+
 
 """
+# Ta del kode izpiše vsa različna imena za konzole, ki se pojavijo ob igrah. Ta imena vključujejo po večini kratice in ne dolga oz. uradna imena konzol.
+
 set_imen_konzol = set()
 for i in igre:
     set_imen_konzol.add((i["konzola"], i["konzola_kratica"]))

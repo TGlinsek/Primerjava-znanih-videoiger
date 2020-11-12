@@ -19,9 +19,9 @@ def zapisi_csv(slovarji, imena_polj, imenik, ime_datoteke):
             writer.writerow(slovar)
 
 
-def slovarja_enaka(slo1, slo2):
+"""def slovarja_enaka(slo1, slo2):
     if not (type({}) == type(slo1) == type(slo2)):
-        raise ValueError
+        raise ValueError("Vsaj eden izmed argumentov funkcije \"slovarja_enaka\" ni slovar.")
     ključi = set(slo1.keys())
     if ključi != set(slo2.keys()):
         return False
@@ -40,17 +40,17 @@ def vsi_slovarji_ki_so_v_sez2_in_ne_v_sez1(sez1, sez2):
                 break
         else:
             komplement.append(i)  # če i != j za vsak j
-    return komplement
+    return komplement"""
 
 
 def preberi_strani_in_izpiši_csv():
     vse_igre = []
-    vse_konzole = []
     for i in range(170):
-        igre, konzole = obdelaj_stran.vrni_slovar_podatkov_strani(i)
+        igre = obdelaj_stran.vrni_slovar_podatkov_o_igrah(i)
         vse_igre += igre
-        vse_konzole += vsi_slovarji_ki_so_v_sez2_in_ne_v_sez1(vse_konzole, konzole)
 
+    vse_konzole = obdelaj_stran.vrni_slovar_podatkov_o_konzolah()
+    
     zapisi_csv(vse_igre, ["id_igre", "ime", "konzola", "konzola_kratica", "ocena", "tezavnost", "dolzina", "povezava"], csv_pot, "igre.csv")
     zapisi_csv(vse_konzole, ["id_konzole", "ime_konzole"], csv_pot, "konzole.csv")
 
