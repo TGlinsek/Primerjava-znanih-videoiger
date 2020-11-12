@@ -112,13 +112,3 @@ def vrni_slovar_podatkov_o_konzolah():
                         
 
 # igre = vrni_slovar_podatkov_o_igrah(0)
-
-
-"""
-# Ta del kode izpiše vsa različna imena za konzole, ki se pojavijo ob igrah. Ta imena vključujejo po večini kratice in ne dolga oz. uradna imena konzol.
-
-set_imen_konzol = set()
-for i in igre:
-    set_imen_konzol.add((i["konzola"], i["konzola_kratica"]))
-print(sorted(set_imen_konzol))
-"""
