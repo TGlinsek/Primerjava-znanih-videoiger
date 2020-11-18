@@ -17,6 +17,11 @@ def pridobi_starševski_imenik_glede_na_podano_pot(pot=vrni_trenutno_pot()):
     # obstaja malce boljši način, kjer uvozimo knjižnico Path, ampak zaenkrat bom uporabil le os knjižnico
     return os.path.abspath(os.path.join(pot, os.pardir))
 
+def popravi_ime_datoteke(ime, nedovoljeni_znaki=["<", ">", ":", "\"", "/", "\\", "|", "?", "*"]):
+    if len(nedovoljeni_znaki) == 0:
+        return ime.replace(" ", "_")
+    return popravi_ime_datoteke(ime.replace(nedovoljeni_znaki[0], "-"), nedovoljeni_znaki[1:])
+
 
 def pripravi_imenik(ime_datoteke):
     '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
