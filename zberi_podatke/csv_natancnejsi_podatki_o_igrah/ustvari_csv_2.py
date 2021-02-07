@@ -17,7 +17,7 @@ import delo_s_csvji
 # Slovar ima za ključe kratice konzol, kot se pojavijo na seznamih, kot vrednosti pa ima celo ime konzole.
 # Tu ni vseh konzol, le tiste, ki se pojavijo na seznamih iger z vsaj 100 ocenami.
 konzole = {
-    "3D0": "3D0",
+    "3DO": "3DO",
     "3DS": "3DS",
     "AND": "Android",
     "ARC": "Arcade Games",
@@ -46,6 +46,7 @@ konzole = {
     "PS2": "PlayStation 2",
     "PS3": "PlayStation 3",
     "PS4": "PlayStation 4",
+    "PS5": "PlayStation 5",
     "PSP": "PSP",
     "SAT": "Saturn",
     "32X": "Sega 32X",
