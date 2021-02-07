@@ -1,3 +1,5 @@
+# prebere csv z igrami in zamenja imena konzol z idji, kakor označeno v konzole.csv
+
 import os, sys, inspect
 
 sys.path.insert(1, os.path.join(sys.path[0], '../..'))

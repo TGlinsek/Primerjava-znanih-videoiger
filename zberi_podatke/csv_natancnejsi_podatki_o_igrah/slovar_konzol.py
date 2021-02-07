@@ -1,3 +1,5 @@
+# prebere konzole.csv in ustvari slovar, ki ima imena konzol za ključe, idje konzol pa za vrednosti
+
 import os, sys, inspect
 
 sys.path.insert(1, os.path.join(sys.path[0], '../..'))

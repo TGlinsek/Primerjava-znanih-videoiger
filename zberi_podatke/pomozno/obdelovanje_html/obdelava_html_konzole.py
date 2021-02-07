@@ -1,3 +1,5 @@
+# sprejme html (seznam iger, prva stran (verjetno)), vrne seznam slovarjev s podatki o vseh konzolah, za katere ima GameFAQs podatke
+
 import re
 
 

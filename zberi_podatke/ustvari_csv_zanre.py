@@ -1,3 +1,5 @@
+# prenese eno stran (prvo stran seznama), prebere podatke o žanrih, jih obdela/spravi v lepši format, jih zapiše v zanri.csv
+
 from pomozno.obdelovanje_html import obdelava_html_zanri
 from pomozno import prenos_strani
 from pomozno import vrni_link_do_strani

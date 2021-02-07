@@ -1,3 +1,5 @@
+# sprejme html ene strani (seznam 50-ih iger), za vsako igro, navedeno na seznamu, prebere podatke, vrne seznam slovarjev podatkov o igrah
+
 import re
 
 

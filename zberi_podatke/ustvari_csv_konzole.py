@@ -1,3 +1,5 @@
+# prenese eno stran (prvo stran seznama), prebere informacije o konzolah, jih shrani v konzole.csv
+
 from pomozno.obdelovanje_html import obdelava_html_konzole
 from pomozno import prenos_strani
 from pomozno import vrni_link_do_strani

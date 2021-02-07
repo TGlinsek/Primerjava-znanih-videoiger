@@ -1,3 +1,5 @@
+# sprejme html strani posamezne igre, prebere podatke (datum, žanr, franšiza) in jih spravi v ustrezen format, vrne slovar za posamezno igro (ne vrne seznama, le slovar)
+
 import re
 
 

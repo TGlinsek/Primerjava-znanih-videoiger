@@ -1,3 +1,5 @@
+# sprejme html (prvo stran seznama iger), prebere informacije o vseh žanrih, ki se lahko pojavijo, vrne seznam slovarjev s podatki o žanrih
+
 import re
 
 

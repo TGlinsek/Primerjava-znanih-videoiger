@@ -1,3 +1,5 @@
+# prebere zanri.csv in ustvari slovar, ki ima žanre (torej, nabore podžanrov) za ključe in idje za vrednosti
+
 import os, sys, inspect
 
 sys.path.insert(1, os.path.join(sys.path[0], '../..'))

@@ -1,3 +1,5 @@
+# prenese strani (približno 170 strani seznama, vsaka stran navede 50 iger) in podatke shrani v igre.csv (konzole ohranjajo prvotna imena)
+
 import os, sys, inspect
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))

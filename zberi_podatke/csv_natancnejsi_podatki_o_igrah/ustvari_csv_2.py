@@ -1,3 +1,5 @@
+# prenese strani posameznih iger, podatke iz strani združi s podatki iz igre.csv, razširjene podatke shrani v igre2.csv
+
 import slovar_konzol
 import slovar_zanrov
 
