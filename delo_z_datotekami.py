@@ -1,33 +1,16 @@
 import os
 
-
-def vrni_pot_do_imenika_odprtega_v_vsc():
-    return os.getcwd()
-
-
-def vrni_trenutno_pot():  # pot do datoteke, v kateri je izveden ta ukaz
-    return os.path.dirname(os.path.realpath(__file__))
-
-
-def vrni_vsebino_poti(pot):
-    return os.listdir(pot)
-
-
-def pridobi_starševski_imenik_glede_na_podano_pot(pot=vrni_trenutno_pot()):
-    # obstaja malce boljši način, kjer uvozimo knjižnico Path, ampak zaenkrat bom uporabil le os knjižnico
-    return os.path.abspath(os.path.join(pot, os.pardir))
-
-def popravi_ime_datoteke(ime, nedovoljeni_znaki=["<", ">", ":", "\"", "/", "\\", "|", "?", "*"]):
-    if len(nedovoljeni_znaki) == 0:
-        return ime.replace(" ", "_")
-    return popravi_ime_datoteke(ime.replace(nedovoljeni_znaki[0], "-"), nedovoljeni_znaki[1:])
-
-
 def pripravi_imenik(ime_datoteke):
     '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
     imenik = os.path.dirname(ime_datoteke)
     if imenik:
         os.makedirs(imenik, exist_ok=True)
+        
+
+def popravi_ime_datoteke(ime, nedovoljeni_znaki=["<", ">", ":", "\"", "/", "\\", "|", "?", "*"]):
+    if len(nedovoljeni_znaki) == 0:
+        return ime.replace(" ", "_")
+    return popravi_ime_datoteke(ime.replace(nedovoljeni_znaki[0], "-"), nedovoljeni_znaki[1:])
 
 
 def shrani_niz(niz, imenik, ime_datoteke):
