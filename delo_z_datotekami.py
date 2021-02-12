@@ -26,7 +26,7 @@ def shrani_niz(niz, imenik, ime_datoteke):
     return None
 
 
-def preberi_niz(imenik="PROG 1\\Projektna_naloga-shranjene_strani", ime_datoteke="poskus pridobivanja html.py"):
+def preberi_niz(imenik, ime_datoteke):
     pot = os.path.join(imenik, ime_datoteke)
     with open(pot, "r", encoding='utf-8') as datoteka:  # open vedno išče v imeniku z naslovom os.getcwd()
         vsebina = datoteka.read()
