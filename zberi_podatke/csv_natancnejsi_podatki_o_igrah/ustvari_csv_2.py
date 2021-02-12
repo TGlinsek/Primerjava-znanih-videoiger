@@ -1,4 +1,5 @@
 # prenese strani posameznih iger, podatke iz strani združi s podatki iz igre.csv, razširjene podatke shrani v igre2.csv
+# teh podatkov nisem mogel v celoti prenesti (bilo bi potrebnih veliko preveč obiskov strani, kot pa domena dovoli), zato iz njih ne bom mogel narediti analize podatkov
 
 import slovar_konzol
 import slovar_zanrov
