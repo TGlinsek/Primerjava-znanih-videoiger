@@ -2,7 +2,7 @@
 
 V tej nalogi bom primerjal **oceno**, **težavnost** in **dolžino** nekaterih videoiger na strani [gamefaqs](https://gamefaqs.gamespot.com/games/rankings). Analiziral bom le igre, ki imajo vsaj določeno število glasov od uporabnikov na tej spletni strani (spodnja meja je 100 glasov na posamezno igro, kar trenutno znaša 8580 iger). Za zanimivejšo analizo bom uporabil tudi podatke o konzolah, za katere so posamezne igre bile narejene.
 
-V mapi 'csv_natancnejsi_podatki_o_igrah' so shranjeni programi, ki jih za analizo nisem potreboval, saj se je izkazalo, da stran ne dopusti tako velikega prevzema podatkov. Vseeno so programi na voljo, če bi se našel način za prenos cca 8500 strani.
+V mapi 'csv_natancnejsi_podatki_o_igrah' so shranjeni programi, ki jih za analizo nisem potreboval, saj se je izkazalo, da stran ne dopusti tako velikega prevzema podatkov. Vseeno so programi na voljo, če bi se našel način za prenos okoli 8500 strani.
 
 ## Hipoteze
 
