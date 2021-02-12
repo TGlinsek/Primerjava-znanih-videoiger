@@ -4,7 +4,7 @@ import csv
 import delo_z_datotekami
 
 # Funkcija povzeta po gradivih iz predavanj
-def zapisi_csv(slovarji, imena_polj, ime_datoteke, imenik="PROG 1\\Projekt\\Primerjava-znanih-videoiger\\zberi_podatke\\csv_datoteke"):
+def zapisi_csv(slovarji, imena_polj, ime_datoteke, imenik="Primerjava-znanih-videoiger\\zberi_podatke\\csv_datoteke"):
     '''Iz seznama slovarjev ustvari CSV datoteko z glavo.'''
     delo_z_datotekami.pripravi_imenik(ime_datoteke)
     pot = os.path.join(imenik, ime_datoteke)  # pot je sedaj polno ime datoteke
@@ -15,7 +15,7 @@ def zapisi_csv(slovarji, imena_polj, ime_datoteke, imenik="PROG 1\\Projekt\\Prim
             writer.writerow(slovar)
 
 
-def preberi_csv(ime_datoteke="igre.csv", imenik="PROG 1\\Projekt\\Primerjava-znanih-videoiger\\zberi_podatke\\csv_datoteke"):
+def preberi_csv(ime_datoteke="igre.csv", imenik="Primerjava-znanih-videoiger\\zberi_podatke\\csv_datoteke"):
     pot = os.path.join(imenik, ime_datoteke)
     with open(pot, 'r', encoding="utf-8") as csv_datoteka:
         bralec = csv.DictReader(csv_datoteka)  # lahko dodaš quotechar='|'
