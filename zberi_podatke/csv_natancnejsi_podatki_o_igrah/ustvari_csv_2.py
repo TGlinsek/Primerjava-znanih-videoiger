@@ -90,6 +90,9 @@ def vpiši_igre():
 
     vse_igre = []
     try:
+        # To bo preneslo vseh približno 8500 strani, kar je lahko malce veliko.
+        # Če želimo prej prenehati prenašati strani, lahko pritisnemo CTRL + C, kar sproži KeyboardInterrupt.
+        # Tako se bodo dosedaj obdelani podatki v except stavku shranili v csv
         for i, slo in enumerate(sez_slojev):
             print(i)
             link = "https://gamefaqs.gamespot.com" + slo["povezava"]
@@ -109,9 +112,7 @@ def vpiši_igre():
             print(presekan_slovar)
             vse_igre.append(presekan_slovar)
     except Exception as e:  
-        print(e)
+        print("Napaka: " + str(e))
 
-
-        
-        # če je več franšiz, se vzame le ena, btw.
+        # če je več franšiz, se vzame le ena (ta zadnja navedena)
         delo_s_csvji.zapisi_csv(vse_igre, ["id_igre", "ime", "konzola", "razvijalec", "izdajatelj", "datum", "franšiza", "zanr", "ocena", "tezavnost", "dolzina", "povezava"], "igre2.csv")
